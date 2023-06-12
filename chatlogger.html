@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Put Text on Image</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="container">
+  <img src="logo.webp">
+	<h1>Chatlog Magic 1.0</h1>
+	<p>Enter the URL of the image:</p>
+	<input type="text" id="myImageURL" value="https://example.com/image.jpg">
+	<br><br>
+	<p>Enter text below:</p>
+	<textarea id="myText" rows="5"></textarea>
+	<br><br>
+	<label for="myFont">Choose a font:</label>
+	<select id="myFont">
+		<option value="Arial">Arial</option>
+		<option value="Verdana">Verdana</option>
+		<option value="Helvetica">Helvetica</option>
+		<option value="Tahoma">Tahoma</option>
+		<option value="Comic Sans MS">Comis sans</option>
+	</select>
+	<label for="myFontSize">Choose a font size:</label>
+	<select id="myFontSize">
+		<option value="20">20px</option>
+		<option value="30">30px</option>
+		<option value="40">40px</option>
+		<option value="50">50px</option>
+	</select>
+		<label for="marginLeft">Margin left:</label>
+	<select id="marginLeft">
+		<option value="20">5px</option>
+		<option value="30">10px</option>
+		<option value="40">15px</option>
+		<option value="50">20px</option>
+	</select>
+	
+			<label for="marginTop">marginTop:</label>
+	<select id="marginTop">
+		<option value="20">5px</option>
+		<option value="30">10px</option>
+		<option value="40">15px</option>
+		<option value="50">20px</option>
+	</select>
+	<label for="myLineHeight">Line height:</label>
+	<select id="myLineHeight">
+		<option value="5">5px</option>
+		<option value="10">10px</option>
+		<option value="15">15px</option>
+		<option value="20">20px</option>
+	</select>
+	<button onclick="putTextOnImage()">Put Text on Image</button>
+	<br><br>
+	<canvas id="myCanvas"></canvas>
+
+
+</div>
+</body>
+</html>
